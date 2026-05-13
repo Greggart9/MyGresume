@@ -6,7 +6,7 @@ import { ArrowRight, Sparkles, Upload, FileCheck } from "lucide-react";
 
 const floatAnimation = {
   y: [0, -12, 0],
-  transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+  transition: { duration: 4, repeat: Infinity },
 };
 
 export default function Hero() {
@@ -191,7 +191,7 @@ export default function Hero() {
               {/* Floating badges */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
                 className="absolute -top-4 -right-4 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium"
                 style={{ background: "#141414", border: "1px solid #2a2010", color: "#c9a84c" }}
               >
@@ -201,7 +201,7 @@ export default function Hero() {
 
               <motion.div
                 animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
                 className="absolute -bottom-4 -left-4 flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium"
                 style={{ background: "#141414", border: "1px solid #1f1f1f", color: "#f0ede8" }}
               >
