@@ -18,7 +18,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      const current = phrases[phraseIndex];
+      const current = phrases[phraseIndex]; 
       if (!deleting) {
         setTypedText(current.slice(0, charIndex + 1));
         if (charIndex + 1 === current.length) {
